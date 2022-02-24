@@ -1,3 +1,6 @@
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/firestore'
+import 'firebase/compat/auth'
 
 
 const firebaseConfig = {
@@ -9,3 +12,9 @@ const firebaseConfig = {
     appId: "1:701784073979:web:3b4713b18155310ab6325e",
     measurementId: "G-Q1X95TEYHV"
 };
+
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+const db = firebaseApp.firestore();
+const auth = firebase.auth();
+
+export { db, auth }; 
