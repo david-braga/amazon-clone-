@@ -8,7 +8,7 @@ export default function Home() {
             <div className='home_container'>
                 <img
                     className='home_image'
-                    src='amazons_banner.png'
+                    src='amazon_banner.png'
                     alt=''
                 />
 
